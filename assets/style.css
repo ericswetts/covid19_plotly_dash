@@ -1,0 +1,66 @@
+/* #CSS For positioning Fixed Header */
+/* .controls  {
+    position : fixed;
+    bottom : 0;
+    left: 0;
+    right : 0;
+    width: 100%;
+    padding: 2rem 1rem;
+    z-index : 1000; 
+    background-color: #ede7c6;
+    font-size : 14px
+} */
+
+#controls-container  {
+    position : fixed;
+    top : 0;
+    left: 0;
+    right : 0;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    z-index : 1000; 
+    background-color: #ede7c6;
+    font-size : 14px; 
+    padding : 20px;
+}
+
+#controls-container .row {
+    padding: 0px;
+
+}
+
+/* the styles for the main content position it to the right of the sidebar and add some padding. */
+#tabs {
+    position : relative;
+    z-index : 0; 
+    font-size : 14px;
+    background-color : 'white';
+}
+
+.tabs-country-shift{
+    margin-top: 25vh !important;
+}
+
+.tabs-global-shift{
+    margin-top: 39vh !important;
+}
+
+.intro-text {
+    background-color:darkslategrey;
+    color : #ede7c7;
+    font-size : 11px;
+    padding : 5px 10px 5px 5px
+}
+
+
+#intro-modal {
+    z-index: 2000;
+    font-size: 14px
+}
+
+.tab-parent {
+    background-color: white;
+}
+
+
+

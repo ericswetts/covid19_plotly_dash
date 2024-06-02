@@ -512,6 +512,7 @@ tabs = dcc.Tabs(
 
 #Initialize Dash App
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
+server = app.server
 
 open_api_link = html.A('Open Coronavirus API', href = 'https://github.com/ExpDev07/coronavirus-tracker-api')
 

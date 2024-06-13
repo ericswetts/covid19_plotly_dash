@@ -15,6 +15,11 @@ from dash.dependencies import Input, Output, State
 #Bootstrap frontend framework
 import dash_bootstrap_components as dbc
 
+#SettingWithCopyWarning suppression
+import warnings
+from pandas.core.common import SettingWithCopyWarning
+warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
+
 external_stylesheets = [dbc.themes.YETI]
 
 #Load reference CSV
@@ -520,7 +525,12 @@ open_api_link = html.A('Open Coronavirus API', href = 'https://github.com/ExpDev
 intro_text = html.Div([
     html.P([
         html.Span(
-            'June 2, 2024 - This dashboard is not maintained & is meant as a portfolio piece. Note that previous versions utilized PostGreSQL and API calls to call current data. COVID data was accessed through June 2021.',
+            "June 2, 2024 - Please be patient as this site loads - it's hosted on a free service",
+            style={'font-weight': 'bold'}
+        ),
+         html.Br(),
+        html.Span(
+            'This dashboard is not maintained & is meant as a portfolio piece. Note that previous versions utilized PostGreSQL and API calls to call current data. COVID data was accessed through June 2021.',
             style={'font-weight': 'bold'}
         ),
         html.Br(), html.Br(),

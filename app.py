@@ -407,7 +407,7 @@ mobile_warning = dbc.Row(
     className='d-lg-none'
 )
 
-header = html.Div(children = [html.H3('Coronavirus 2019 Dashboard +++'), mobile_warning], 
+header = html.Div(children = [html.H3('COVID-19 Dashboard'), mobile_warning], 
                  style = {
                      'backgroundColor': '#ede7c6',
                      'padding': '15px', 
@@ -523,10 +523,10 @@ open_api_link = html.A('Open Coronavirus API', href = 'https://github.com/ExpDev
 intro_text = html.Div([
     html.P([
         html.Span(
-            "June 2, 2024 - Please be patient as this site loads - it's hosted on a free service",
+            "June 2, 2024 - Please be patient as this site loads - it's hosted on a free service.",
             style={'font-weight': 'bold'}
         ),
-         html.Br(),
+         html.Br(),html.Br(),
         html.Span(
             'This dashboard is not maintained & is meant as a portfolio piece. Note that previous versions utilized PostGreSQL and API calls to call current data. COVID data was accessed through June 2021.',
             style={'font-weight': 'bold'}

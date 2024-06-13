@@ -16,9 +16,7 @@ from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
 #SettingWithCopyWarning suppression
-import warnings
-from pandas.core.common import SettingWithCopyWarning
-warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
+pd.options.mode.chained_assignment = None 
 
 external_stylesheets = [dbc.themes.YETI]
 
